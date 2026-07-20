@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@example.com",
+    "password": "aarav123"
+  },
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "email": "priya.verma@example.com",
+    "password": "priya123"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Singh",
+    "email": "rahul.singh@example.com",
+    "password": "rahul123"
+  },
+  {
+    "id": 4,
+    "name": "Neha Gupta",
+    "email": "neha.gupta@example.com",
+    "password": "neha123"
+  },
+  {
+    "id": 5,
+    "name": "Rohan Mehta",
+    "email": "rohan.mehta@example.com",
+    "password": "rohan123"
+  },
+  {
+    "id": 6,
+    "name": "Ananya Kapoor",
+    "email": "ananya.kapoor@example.com",
+    "password": "ananya123"
+  },
+  {
+    "id": 7,
+    "name": "Vikram Patel",
+    "email": "vikram.patel@example.com",
+    "password": "vikram123"
+  },
+  {
+    "id": 8,
+    "name": "Sneha Joshi",
+    "email": "sneha.joshi@example.com",
+    "password": "sneha123"
+  },
+  {
+    "id": 9,
+    "name": "Aditya Kumar",
+    "email": "aditya.kumar@example.com",
+    "password": "aditya123"
+  },
+  {
+    "id": 10,
+    "name": "Simran Kaur",
+    "email": "simran.kaur@example.com",
+    "password": "simran123"
+  },
+  {
+    "id": 11,
+    "name": "harsh",
+    "email": "harsh@gmial.com",
+    "password": "123wer"
+  },
+  {
+    "id": 12,
+    "name": "Harshit Raj",
+    "email": "panditjee2712@gmail.com",
+    "password": {}
+  }
+]
