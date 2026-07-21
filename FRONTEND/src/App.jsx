@@ -7,6 +7,7 @@ import Footer from './component/Footer'
 import './App.css'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Dashboard from './pages/Dashboard'
 import Feature from './pages/Feature'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/feature" element={<Feature/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
       </Routes>
