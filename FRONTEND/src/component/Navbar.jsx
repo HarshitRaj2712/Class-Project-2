@@ -1,28 +1,80 @@
-import {React, useContext} from 'react'
-import {Link} from 'react-router-dom';
+import { React, useContext } from "react";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/useTheme";
+
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-   const toggleTheme = () => {
-    
+
+  const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
   return (
-    <div className='flex flex-row justify-center items-center gap-5 
-    h-20 font-bold text-lg'>
-        {/* <h1>Hello</h1> */}
-        <Link to='/about'>About</Link>
-        <Link to='/contact'>Contact</Link>
-        <Link to='/feature'>Courses</Link>
-        <Link to='/dashboard'>DashBoard</Link>
-        <button onClick={toggleTheme}
-        className="bg-white text-black px-3 py-1 rounded">
-        {theme}</button>
-        <Link to='/login'>Login</Link>
-        <Link to='/signup'>SignUP</Link>
+    <nav className="w-full border-b shadow-sm">
+      <div className="max-w-7xl mx-auto h-20 flex items-center justify-between px-8">
+        
+        {/* Logo */}
+        <h1 className="text-2xl font-bold tracking-wide cursor-pointer">
+          Logo
+        </h1>
 
-    </div>
-  )
-}
+        {/* Links */}
+        <div className="flex items-center gap-8 text-lg font-medium">
+          <Link
+            to="/about"
+            className="transition-transform duration-200 hover:scale-105"
+          >
+            About
+          </Link>
 
-export default Navbar
+          <Link
+            to="/contact"
+            className="transition-transform duration-200 hover:scale-105"
+          >
+            Contact
+          </Link>
+
+          <Link
+            to="/feature"
+            className="transition-transform duration-200 hover:scale-105"
+          >
+            Courses
+          </Link>
+
+          <Link
+            to="/dashboard"
+            className="transition-transform duration-200 hover:scale-105"
+          >
+            Dashboard
+          </Link>
+        </div>
+
+        {/* Right Section */}
+        <div className="flex items-center gap-4">
+          <button
+            onClick={toggleTheme}
+            className="px-4 py-2 rounded-lg border transition-transform duration-200 hover:scale-105"
+          >
+            {theme}
+          </button>
+
+          <Link
+            to="/login"
+            className="px-4 py-2 rounded-lg border transition-transform duration-200 hover:scale-105"
+          >
+            Login
+          </Link>
+
+          <Link
+            to="/signup"
+            className="px-4 py-2 rounded-lg border transition-transform duration-200 hover:scale-105"
+          >
+            Sign Up
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
